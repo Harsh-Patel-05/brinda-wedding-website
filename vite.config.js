@@ -7,6 +7,8 @@ import { defineConfig } from 'vite'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  // GitHub Pages serves at https://<user>.github.io/<repo>/
+  base: '/brinda-wedding-website/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
