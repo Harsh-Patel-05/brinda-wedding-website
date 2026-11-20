@@ -1,3 +1,5 @@
+import { asset } from '@/lib/utils'
+
 /** Editable services — images from @brinda.wedding portfolio */
 export const services = [
   {
@@ -7,7 +9,7 @@ export const services = [
     description:
       'We cover your wedding day end to end — rituals, family portraits, guest moments, and the quiet in-between hours. You get a complete story of the day, not just a few set poses.',
     icon: 'Camera',
-    image: '/portfolio/archi-brijesh.jpg',
+    image: asset('/portfolio/archi-brijesh.jpg'),
   },
   {
     id: 'pre-wedding',
@@ -16,7 +18,7 @@ export const services = [
     description:
       'A pre-wedding shoot is a chance to get comfortable in front of the camera. We keep direction light, choose a location that feels like you, and focus on natural chemistry.',
     icon: 'Heart',
-    image: '/portfolio/mukesh-hima-1.jpg',
+    image: asset('/portfolio/mukesh-hima-1.jpg'),
   },
   {
     id: 'candid',
@@ -25,7 +27,7 @@ export const services = [
     description:
       'Candid work is about noticing — a grandmother’s blessing, friends teasing the groom, a tear during the pheras. These frames often become the ones families love most.',
     icon: 'Aperture',
-    image: '/portfolio/dimple-rajnit.jpg',
+    image: asset('/portfolio/dimple-rajnit.jpg'),
   },
   {
     id: 'films',
@@ -34,7 +36,7 @@ export const services = [
     description:
       'We craft highlight films with music, pacing, and emotion. Perfect for sharing with family who couldn’t attend, or for reliving the day on anniversaries.',
     icon: 'Film',
-    image: '/portfolio/visweta-wedding.jpg',
+    image: asset('/portfolio/visweta-wedding.jpg'),
   },
   {
     id: 'drone',
@@ -43,7 +45,7 @@ export const services = [
     description:
       'When the venue allows it, drone shots add a grand view of your décor, location, and celebrations. We follow local rules and only fly where it’s safe and permitted.',
     icon: 'Plane',
-    image: '/portfolio/vidhi-krupal.jpg',
+    image: asset('/portfolio/vidhi-krupal.jpg'),
   },
   {
     id: 'albums',
@@ -52,6 +54,6 @@ export const services = [
     description:
       'Alongside your online gallery, we can design a wedding album and fine prints — something physical for your parents, and for you to open years later.',
     icon: 'BookOpen',
-    image: '/portfolio/mukesh-hima-2.jpg',
+    image: asset('/portfolio/mukesh-hima-2.jpg'),
   },
 ]

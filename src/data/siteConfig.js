@@ -1,3 +1,5 @@
+import { asset } from '@/lib/utils'
+
 /** Editable site-wide settings for Brinda Wedding */
 export const siteConfig = {
   brand: 'Brinda Wedding',
@@ -144,11 +146,11 @@ export const siteConfig = {
     },
   },
   instagramPlaceholders: [
-    '/portfolio/mukesh-hima-1.jpg',
-    '/portfolio/archi-brijesh.jpg',
-    '/portfolio/vidhi-krupal.jpg',
-    '/portfolio/visweta-wedding.jpg',
-    '/portfolio/het-nency.jpg',
-    '/portfolio/krupa-jaimin.jpg',
+    asset('/portfolio/mukesh-hima-1.jpg'),
+    asset('/portfolio/archi-brijesh.jpg'),
+    asset('/portfolio/vidhi-krupal.jpg'),
+    asset('/portfolio/visweta-wedding.jpg'),
+    asset('/portfolio/het-nency.jpg'),
+    asset('/portfolio/krupa-jaimin.jpg'),
   ],
 }

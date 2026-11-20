@@ -5,6 +5,7 @@ import { NumberTicker } from '@/components/ui/number-ticker'
 import { TitleWithScript } from '@/components/ui/title-with-script'
 import { ProcessTimeline } from '@/components/sections/ProcessTimeline'
 import { FinalCTA } from '@/components/sections/FinalCTA'
+import { asset } from '@/lib/utils'
 
 export default function About() {
   const copy = siteConfig.pageCopy.about
@@ -18,7 +19,7 @@ export default function About() {
             <div className="overflow-hidden rounded-xl">
               {/* TODO: replace with real portrait of Parth Patel */}
               <img
-                src="/portfolio/visweta-wedding.jpg"
+                src={asset('/portfolio/visweta-wedding.jpg')}
                 alt={`${siteConfig.owner}, wedding photographer at Brinda Wedding`}
                 width={900}
                 height={1100}

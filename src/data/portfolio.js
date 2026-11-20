@@ -1,3 +1,5 @@
+import { asset } from '@/lib/utils'
+
 /** Portfolio from @brinda.wedding — local copies in /public/portfolio */
 export const portfolioCategories = [
   'All',
@@ -14,7 +16,7 @@ export const portfolioItems = [
     title: 'Archi & Brijesh',
     category: 'Wedding',
     location: 'Gujarat',
-    image: '/portfolio/archi-brijesh.jpg',
+    image: asset('/portfolio/archi-brijesh.jpg'),
     span: 'tall',
   },
   {
@@ -22,7 +24,7 @@ export const portfolioItems = [
     title: 'Mukesh & Hima · Pre-Wedding',
     category: 'Pre-Wedding',
     location: 'Rustic Villa',
-    image: '/portfolio/mukesh-hima-1.jpg',
+    image: asset('/portfolio/mukesh-hima-1.jpg'),
     span: 'wide',
   },
   {
@@ -30,7 +32,7 @@ export const portfolioItems = [
     title: 'Vidhi & Krupal',
     category: 'Wedding',
     location: 'Gujarat',
-    image: '/portfolio/vidhi-krupal.jpg',
+    image: asset('/portfolio/vidhi-krupal.jpg'),
     span: 'normal',
   },
   {
@@ -38,7 +40,7 @@ export const portfolioItems = [
     title: 'Visweta Wedding',
     category: 'Wedding',
     location: 'Gujarat',
-    image: '/portfolio/visweta-wedding.jpg',
+    image: asset('/portfolio/visweta-wedding.jpg'),
     span: 'tall',
   },
   {
@@ -46,7 +48,7 @@ export const portfolioItems = [
     title: 'Krupa & Jaimin · Film still',
     category: 'Films',
     location: 'Gujarat',
-    image: '/portfolio/krupa-jaimin.jpg',
+    image: asset('/portfolio/krupa-jaimin.jpg'),
     span: 'normal',
   },
   {
@@ -54,7 +56,7 @@ export const portfolioItems = [
     title: 'Mukesh & Hima · Soft light',
     category: 'Pre-Wedding',
     location: 'Rustic Villa',
-    image: '/portfolio/mukesh-hima-2.jpg',
+    image: asset('/portfolio/mukesh-hima-2.jpg'),
     span: 'wide',
   },
   {
@@ -62,7 +64,7 @@ export const portfolioItems = [
     title: 'Het & Nency · Ring ceremony',
     category: 'Engagement',
     location: 'Gujarat',
-    image: '/portfolio/het-nency.jpg',
+    image: asset('/portfolio/het-nency.jpg'),
     span: 'normal',
   },
   {
@@ -70,7 +72,7 @@ export const portfolioItems = [
     title: 'Dimple & Rajnit',
     category: 'Candid',
     location: 'Gujarat',
-    image: '/portfolio/dimple-rajnit.jpg',
+    image: asset('/portfolio/dimple-rajnit.jpg'),
     span: 'tall',
   },
   {
@@ -78,7 +80,7 @@ export const portfolioItems = [
     title: 'Mukesh & Hima · Portraits',
     category: 'Candid',
     location: 'Rustic Villa',
-    image: '/portfolio/mukesh-hima-3.jpg',
+    image: asset('/portfolio/mukesh-hima-3.jpg'),
     span: 'normal',
   },
   {
@@ -86,7 +88,7 @@ export const portfolioItems = [
     title: 'Archi & Brijesh · Highlight',
     category: 'Films',
     location: 'Gujarat',
-    image: '/portfolio/archi-brijesh-film.jpg',
+    image: asset('/portfolio/archi-brijesh-film.jpg'),
     span: 'wide',
   },
   {
@@ -94,7 +96,7 @@ export const portfolioItems = [
     title: 'Mukesh & Hima · Evening',
     category: 'Pre-Wedding',
     location: 'Rustic Villa',
-    image: '/portfolio/mukesh-hima-5.jpg',
+    image: asset('/portfolio/mukesh-hima-5.jpg'),
     span: 'normal',
   },
   {
@@ -102,7 +104,7 @@ export const portfolioItems = [
     title: 'Dimple & Rajnit · Film still',
     category: 'Films',
     location: 'Gujarat',
-    image: '/portfolio/dimple-rajnit-film.jpg',
+    image: asset('/portfolio/dimple-rajnit-film.jpg'),
     span: 'tall',
   },
 ]

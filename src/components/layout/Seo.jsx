@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { siteConfig } from '@/data/siteConfig'
+import { asset } from '@/lib/utils'
 
 export function Seo({
   title,
@@ -45,7 +46,7 @@ export function Seo({
       telephone: siteConfig.phoneTel,
       email: siteConfig.email,
       url: typeof window !== 'undefined' ? window.location.origin + path : path,
-      image: '/favicon.jpg',
+      image: asset('/favicon.jpg'),
       founder: {
         '@type': 'Person',
         name: siteConfig.owner,

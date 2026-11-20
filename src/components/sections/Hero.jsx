@@ -10,11 +10,12 @@ import { SplitHeadline } from '@/components/ui/split-headline'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { useSiteReady } from '@/hooks/useSiteReady'
 import { EASE } from '@/lib/animations'
+import { asset } from '@/lib/utils'
 
 const HERO_IMAGES = [
-  '/portfolio/archi-brijesh.jpg',
-  '/portfolio/mukesh-hima-1.jpg',
-  '/portfolio/vidhi-krupal.jpg',
+  asset('/portfolio/archi-brijesh.jpg'),
+  asset('/portfolio/mukesh-hima-1.jpg'),
+  asset('/portfolio/vidhi-krupal.jpg'),
 ]
 
 export function Hero() {

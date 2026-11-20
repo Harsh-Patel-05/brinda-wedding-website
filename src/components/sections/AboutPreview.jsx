@@ -6,6 +6,7 @@ import { SectionOrnament } from '@/components/ui/section-ornament'
 import { TitleWithScript } from '@/components/ui/title-with-script'
 import { Magnetic } from '@/components/ui/magnetic'
 import { Button } from '@/components/ui/button'
+import { asset } from '@/lib/utils'
 
 export function AboutPreview() {
   const copy = siteConfig.sectionCopy
@@ -17,7 +18,7 @@ export function AboutPreview() {
           <div className="relative overflow-hidden rounded-xl">
             <div className="aspect-[4/5] overflow-hidden">
               <img
-                src="/portfolio/mukesh-hima-2.jpg"
+                src={asset('/portfolio/mukesh-hima-2.jpg')}
                 alt={`${siteConfig.owner} at a wedding shoot`}
                 width={800}
                 height={1000}
