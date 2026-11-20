@@ -65,14 +65,17 @@ export function Preloader() {
     const hardCap = window.setTimeout(unmount, reduced ? 900 : 7500)
 
     const unsub = smooth.on('change', (v) => {
-      const next = Math.min(100, Math.round(v))
+      // Snap to 100 once we're essentially there (spring asymptotes otherwise)
+      const next = v >= 99.2 ? 100 : Math.min(99, Math.round(v))
       setPercent(next)
       const line = STATUS_COPY.find((s) => next < s.until)
       if (line) setStatus(line.text)
     })
 
     if (reduced) {
-      progress.set(100)
+      progress.jump(100)
+      smooth.jump(100)
+      setPercent(100)
       const t = window.setTimeout(beginExit, 160)
       return () => {
         clearTimeout(hardCap)
@@ -82,15 +85,17 @@ export function Preloader() {
       }
     }
 
-    // Steady climb with a soft settle into 100%
+    // Steady climb, then hard-land on 100% before curtains open
     const controls = animate(progress, 100, {
       duration: 3.8,
       ease: [0.4, 0.0, 0.2, 1],
       onComplete: () => {
-        if (!finished.current) {
-          // Let spring settle on 100, then exit
-          window.setTimeout(beginExit, 520)
-        }
+        if (finished.current) return
+        progress.jump(100)
+        smooth.jump(100)
+        setPercent(100)
+        setStatus(STATUS_COPY[STATUS_COPY.length - 1].text)
+        window.setTimeout(beginExit, 480)
       },
     })
 
