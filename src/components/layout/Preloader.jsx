@@ -227,7 +227,7 @@ export function Preloader() {
             </motion.div>
 
             <motion.p
-              className="brand-mark relative text-center font-script text-[2.5rem] font-medium italic tracking-wide text-white sm:text-5xl md:text-[3.5rem]"
+              className="brand-mark relative text-center font-script text-[2.5rem] tracking-wide text-white sm:text-5xl md:text-[3.5rem]"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.18, duration: 0.7, ease: EASE }}

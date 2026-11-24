@@ -126,11 +126,13 @@
     position: relative;
   }
 
-  /* Extra room for italic descenders (e.g. the “g” in Wedding) */
+  /* Room for descenders — keep “Wedding” g fully visible */
   .brand-mark {
-    line-height: 1.45;
-    padding-top: 0.12em;
-    padding-bottom: 0.28em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 0.08em;
+    padding-bottom: 0.22em;
     overflow: visible;
   }
 

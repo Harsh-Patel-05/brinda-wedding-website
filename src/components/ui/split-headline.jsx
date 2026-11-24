@@ -36,19 +36,23 @@ export function SplitHeadline({
         return words.map((word, wi) => {
           const i = wordIndex++
           return (
-            <motion.span
+            <span
               key={`${pi}-${wi}`}
               className={cn(
-                'inline-block overflow-hidden',
+                'inline-block overflow-hidden pb-[0.2em]',
                 part.script &&
-                  'font-script text-[1.15em] font-medium italic leading-none text-gold-gradient sm:text-[1.2em]',
+                  'font-script text-[1.15em] font-medium italic text-gold-gradient sm:text-[1.2em]',
               )}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: delay * 0.35 + i * 0.04, duration: 0.4, ease: EASE }}
             >
-              {word}
-            </motion.span>
+              <motion.span
+                className="inline-block"
+                initial={{ opacity: 0, y: '0.85em' }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: delay * 0.35 + i * 0.04, duration: 0.4, ease: EASE }}
+              >
+                {word}
+              </motion.span>
+            </span>
           )
         })
       })}

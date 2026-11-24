@@ -58,7 +58,7 @@ export function Navbar() {
               height={44}
               className="h-9 w-9 shrink-0 rounded-full object-cover ring-1 ring-gold/40 transition duration-500 group-hover:ring-gold group-hover:shadow-[0_0_20px_rgba(212,168,58,0.35)] sm:h-10 sm:w-10 md:h-11 md:w-11"
             />
-            <span className="brand-mark inline-block font-script text-[1.35rem] font-medium italic tracking-wide text-text-primary sm:text-2xl md:text-[1.65rem]">
+            <span className="brand-mark inline-block font-script text-[1.35rem] tracking-wide text-text-primary sm:text-2xl md:text-[1.65rem]">
               Brinda <span className="text-gold-light">Wedding</span>
             </span>
           </Link>
