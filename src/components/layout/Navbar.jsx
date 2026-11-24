@@ -33,7 +33,7 @@ export function Navbar() {
     <>
       <motion.header
         className={cn(
-          'fixed inset-x-0 top-0 z-50 w-full transition-colors duration-300',
+          'fixed inset-x-0 top-0 z-50 w-full overflow-visible transition-colors duration-300',
           scrolled || open ? 'glass shadow-[0_8px_30px_rgba(0,0,0,0.25)]' : 'bg-transparent',
         )}
         initial={false}
@@ -44,10 +44,13 @@ export function Navbar() {
         transition={{ duration: 0.35, ease: EASE }}
       >
         <nav
-          className="container-wide flex h-14 items-center justify-between gap-2 px-3 sm:h-16 sm:gap-4 sm:px-6 md:h-20 md:px-10"
+          className="container-wide flex h-14 items-center justify-between gap-2 overflow-visible px-3 sm:h-16 sm:gap-4 sm:px-6 md:h-20 md:px-10"
           aria-label="Primary"
         >
-          <Link to="/" className="group flex min-h-11 min-w-0 items-center gap-2 sm:gap-3">
+          <Link
+            to="/"
+            className="group flex min-h-11 min-w-0 items-center gap-2 overflow-visible sm:gap-3"
+          >
             <img
               src={logo}
               alt={`${siteConfig.brand} logo`}
@@ -55,7 +58,7 @@ export function Navbar() {
               height={44}
               className="h-9 w-9 shrink-0 rounded-full object-cover ring-1 ring-gold/40 transition duration-500 group-hover:ring-gold group-hover:shadow-[0_0_20px_rgba(212,168,58,0.35)] sm:h-10 sm:w-10 md:h-11 md:w-11"
             />
-            <span className="overflow-visible pb-0.5 font-script text-[1.35rem] font-medium italic leading-normal tracking-wide text-text-primary sm:text-2xl md:text-[1.65rem]">
+            <span className="brand-mark inline-block font-script text-[1.35rem] font-medium italic tracking-wide text-text-primary sm:text-2xl md:text-[1.65rem]">
               Brinda <span className="text-gold-light">Wedding</span>
             </span>
           </Link>

@@ -126,6 +126,14 @@
     position: relative;
   }
 
+  /* Extra room for italic descenders (e.g. the “g” in Wedding) */
+  .brand-mark {
+    line-height: 1.45;
+    padding-top: 0.12em;
+    padding-bottom: 0.28em;
+    overflow: visible;
+  }
+
   .glass {
     background: color-mix(in srgb, var(--bg-primary) 88%, transparent);
     border-bottom: 1px solid color-mix(in srgb, var(--gold) 18%, transparent);
