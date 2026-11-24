@@ -41,7 +41,9 @@ export function Footer() {
               className="h-11 w-11 shrink-0 rounded-full object-cover ring-1 ring-gold/40 sm:h-12 sm:w-12"
             />
             <div className="min-w-0">
-              <div className="font-script text-3xl leading-none text-text-primary sm:text-4xl">Brinda Wedding</div>
+              <div className="font-script text-3xl font-medium italic leading-none tracking-wide text-text-primary sm:text-4xl">
+                Brinda Wedding
+              </div>
               <div className="text-[10px] tracking-widest text-text-muted uppercase sm:text-xs">
                 by {siteConfig.owner}
               </div>

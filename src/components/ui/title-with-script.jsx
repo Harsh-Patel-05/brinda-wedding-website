@@ -6,7 +6,9 @@ export function TitleWithScript({ parts, as: Tag = 'h2', className }) {
   return (
     <Tag className={cn(className)}>
       {before}{' '}
-      {script ? <span className="font-script text-gold-gradient">{script}</span> : null}
+      {script ? (
+        <span className="font-script font-medium italic text-gold-gradient">{script}</span>
+      ) : null}
       {after ? <> {after}</> : null}
     </Tag>
   )

@@ -16,7 +16,7 @@ export function SplitHeadline({
       <h1 className={cn(className)}>
         {parts.map((p, i) =>
           p.script ? (
-            <span key={i} className="font-script text-gold-gradient italic">
+            <span key={i} className="font-script font-medium italic text-gold-gradient">
               {p.text}{' '}
             </span>
           ) : (
@@ -41,7 +41,7 @@ export function SplitHeadline({
               className={cn(
                 'inline-block overflow-hidden',
                 part.script &&
-                  'font-script text-[1.15em] text-gold-gradient italic leading-none sm:text-[1.2em]',
+                  'font-script text-[1.15em] font-medium italic leading-none text-gold-gradient sm:text-[1.2em]',
               )}
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
